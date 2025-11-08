@@ -25,16 +25,13 @@ A comprehensive cybersecurity tool featuring:
 #### Desktop Web App
 - ✅ **Import & Visualize**: Drag-and-drop evidence bundle import
 - ✅ **Dashboard Analytics**: Interactive charts (Recharts), protocol breakdown
-- ✅ **Geo-Location Map**: Plot remote hosts on interactive map (Leaflet.js)
 - ✅ **Timeline Replay**: Playback captured sessions with temporal visualization
 - ✅ **Rule Builder**: Create & manage custom detection rules
 - ✅ **Cross-Platform**: Works on Mac, Windows, Linux
 
 ### 💎 Bonus Features
 - ⚡ **One-Tap Security Filters**: Pre-configured filters for common threat patterns
-- 🗺️ **GeoIP Integration**: Automatic IP geo-location with map visualization
 - ⚖️ **Live Rule Builder**: Custom detection rules with real-time triggers
-- ⏪ **Session Replay**: Timeline-based playback with frame-by-frame analysis
 
 ---
 
