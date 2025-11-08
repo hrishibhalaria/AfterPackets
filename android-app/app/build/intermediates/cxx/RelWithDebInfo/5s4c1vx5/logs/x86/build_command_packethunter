@@ -1,0 +1,4 @@
+/Users/prasham/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/.cxx/RelWithDebInfo/5s4c1vx5/x86 \
+  packethunter

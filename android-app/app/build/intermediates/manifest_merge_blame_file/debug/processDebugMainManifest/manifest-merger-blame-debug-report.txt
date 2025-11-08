@@ -1,0 +1,306 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.packethunter.mobile"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Network permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:8:5-76
+14-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:9:5-79
+15-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:10:5-81
+16-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:10:22-78
+17
+18    <!-- VPN Service permission -->
+19    <uses-permission android:name="android.permission.BIND_VPN_SERVICE" />
+19-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:13:5-14:47
+19-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:13:22-72
+20
+21    <!-- Storage permissions for export -->
+22    <uses-permission
+22-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:17:5-18:38
+23        android:name="android.permission.READ_EXTERNAL_STORAGE"
+23-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:17:22-77
+24        android:maxSdkVersion="32" />
+24-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:18:9-35
+25    <uses-permission
+25-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:19:5-21:40
+26        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+26-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:19:22-78
+27        android:maxSdkVersion="32" />
+27-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:20:9-35
+28
+29    <!-- Notification permission for Android 13+ -->
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+30-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:24:5-77
+30-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:24:22-74
+31
+32    <!-- Network stats permission for per-app data usage (optional but recommended) -->
+33    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+33-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:27:5-28:47
+33-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:27:22-75
+34
+35    <!-- Foreground service -->
+36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+36-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:31:5-32:54
+36-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:31:22-74
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+37-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:33:5-87
+37-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:33:22-84
+38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+38-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:34:5-89
+38-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:34:22-86
+39
+40    <uses-feature
+40-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+41        android:glEsVersion="0x00020000"
+41-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+42        android:required="true" />
+42-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+43
+44    <queries>
+44-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+45
+46        <!-- Needs to be explicitly declared on Android R+ -->
+47        <package android:name="com.google.android.apps.maps" />
+47-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+47-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+48    </queries>
+49
+50    <permission
+50-->[androidx.core:core:1.12.0] /Users/prasham/.gradle/caches/8.13/transforms/c9c5578d0eba31a335bd0665a2262165/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+51        android:name="com.packethunter.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+51-->[androidx.core:core:1.12.0] /Users/prasham/.gradle/caches/8.13/transforms/c9c5578d0eba31a335bd0665a2262165/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+52        android:protectionLevel="signature" />
+52-->[androidx.core:core:1.12.0] /Users/prasham/.gradle/caches/8.13/transforms/c9c5578d0eba31a335bd0665a2262165/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+53
+54    <uses-permission android:name="com.packethunter.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+54-->[androidx.core:core:1.12.0] /Users/prasham/.gradle/caches/8.13/transforms/c9c5578d0eba31a335bd0665a2262165/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+54-->[androidx.core:core:1.12.0] /Users/prasham/.gradle/caches/8.13/transforms/c9c5578d0eba31a335bd0665a2262165/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+55
+56    <application
+56-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:36:5-90:19
+57        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+57-->[androidx.core:core:1.12.0] /Users/prasham/.gradle/caches/8.13/transforms/c9c5578d0eba31a335bd0665a2262165/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+58        android:debuggable="true"
+59        android:extractNativeLibs="false"
+60        android:icon="@mipmap/ic_launcher"
+60-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:37:9-43
+61        android:label="@string/app_name"
+61-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:38:9-41
+62        android:roundIcon="@mipmap/ic_launcher_round"
+62-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:39:9-54
+63        android:supportsRtl="true"
+63-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:40:9-35
+64        android:theme="@style/Theme.MobilePacketHunter"
+64-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:41:9-56
+65        android:usesCleartextTraffic="true" >
+65-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:42:9-44
+66
+67        <!-- Google Maps API Key -->
+68        <meta-data
+68-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:46:9-48:71
+69            android:name="com.google.android.geo.API_KEY"
+69-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:47:13-58
+70            android:value="AIzaSyD6oFiJAI8rWBV5d-EHqPYZ-VwDVRwFunI" />
+70-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:48:13-68
+71
+72        <!-- Main Activity -->
+73        <activity
+73-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:51:9-59:20
+74            android:name="com.packethunter.mobile.MainActivity"
+74-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:52:13-41
+75            android:exported="true"
+75-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:53:13-36
+76            android:theme="@style/Theme.MobilePacketHunter" >
+76-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:54:13-60
+77            <intent-filter>
+77-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:55:13-58:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:56:17-69
+78-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:56:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:57:17-77
+80-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:57:27-74
+81            </intent-filter>
+82        </activity>
+83
+84        <!-- VPN Service -->
+85        <service
+85-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:62:9-77:19
+86            android:name="com.packethunter.mobile.capture.PacketCaptureService"
+86-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:63:13-57
+87            android:exported="false"
+87-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:65:13-37
+88            android:foregroundServiceType="dataSync|specialUse"
+88-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:66:13-64
+89            android:permission="android.permission.BIND_VPN_SERVICE" >
+89-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:64:13-69
+90            <intent-filter>
+90-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:68:13-70:29
+91                <action android:name="android.net.VpnService" />
+91-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:69:17-65
+91-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:69:25-62
+92            </intent-filter>
+93
+94            <meta-data
+94-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:71:13-73:41
+95                android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+95-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:72:17-73
+96                android:value="false" />
+96-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:73:17-38
+97
+98            <property
+98-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:74:13-76:95
+99                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+99-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:75:17-76
+100                android:value="Network packet capture and analysis for security monitoring" />
+100-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:76:17-92
+101        </service>
+102
+103        <!-- File Provider for sharing exports -->
+104        <provider
+105            android:name="androidx.core.content.FileProvider"
+105-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:81:13-62
+106            android:authorities="com.packethunter.mobile.fileprovider"
+106-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:82:13-64
+107            android:exported="false"
+107-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:83:13-37
+108            android:grantUriPermissions="true" >
+108-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:84:13-47
+109            <meta-data
+109-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:86:13-88:54
+110                android:name="android.support.FILE_PROVIDER_PATHS"
+110-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:87:17-67
+111                android:resource="@xml/file_paths" />
+111-->/Users/prasham/Desktop/Cursor-MPH/mobile-packet-hunter/android-app/app/src/main/AndroidManifest.xml:88:17-51
+112        </provider>
+113        <!-- Needs to be explicitly declared on P+ -->
+114        <uses-library
+114-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+115            android:name="org.apache.http.legacy"
+115-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+116            android:required="false" />
+116-->[com.google.android.gms:play-services-maps:18.2.0] /Users/prasham/.gradle/caches/8.13/transforms/eb1ec1ef59c1e4627db5fa6f23a12d75/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+117
+118        <activity
+118-->[com.google.android.gms:play-services-base:18.0.1] /Users/prasham/.gradle/caches/8.13/transforms/d39698ba95f18b542659128553d04b9b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+119            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+119-->[com.google.android.gms:play-services-base:18.0.1] /Users/prasham/.gradle/caches/8.13/transforms/d39698ba95f18b542659128553d04b9b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+120            android:exported="false"
+120-->[com.google.android.gms:play-services-base:18.0.1] /Users/prasham/.gradle/caches/8.13/transforms/d39698ba95f18b542659128553d04b9b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+121-->[com.google.android.gms:play-services-base:18.0.1] /Users/prasham/.gradle/caches/8.13/transforms/d39698ba95f18b542659128553d04b9b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+122
+123        <meta-data
+123-->[com.google.android.gms:play-services-basement:18.0.0] /Users/prasham/.gradle/caches/8.13/transforms/5543a387ef988490f60daacabec50a28/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+124            android:name="com.google.android.gms.version"
+124-->[com.google.android.gms:play-services-basement:18.0.0] /Users/prasham/.gradle/caches/8.13/transforms/5543a387ef988490f60daacabec50a28/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+125            android:value="@integer/google_play_services_version" />
+125-->[com.google.android.gms:play-services-basement:18.0.0] /Users/prasham/.gradle/caches/8.13/transforms/5543a387ef988490f60daacabec50a28/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+126
+127        <provider
+127-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+128            android:name="androidx.startup.InitializationProvider"
+128-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
+129            android:authorities="com.packethunter.mobile.androidx-startup"
+129-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
+130            android:exported="false" >
+130-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
+131            <meta-data
+131-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+132-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
+133                android:value="androidx.startup" />
+133-->[androidx.emoji2:emoji2:1.4.0] /Users/prasham/.gradle/caches/8.13/transforms/90a27e710753b656899d6db3ddab4680/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
+134            <meta-data
+134-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/prasham/.gradle/caches/8.13/transforms/f23ec63a9b29e703d79790a8e2ed0593/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+135                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+135-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/prasham/.gradle/caches/8.13/transforms/f23ec63a9b29e703d79790a8e2ed0593/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+136                android:value="androidx.startup" />
+136-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/prasham/.gradle/caches/8.13/transforms/f23ec63a9b29e703d79790a8e2ed0593/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+137            <meta-data
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+138                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+139                android:value="androidx.startup" />
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+140        </provider>
+141
+142        <activity
+142-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/prasham/.gradle/caches/8.13/transforms/b341181be2f3e9ea3ea25906c0686d31/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
+143            android:name="androidx.activity.ComponentActivity"
+143-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/prasham/.gradle/caches/8.13/transforms/b341181be2f3e9ea3ea25906c0686d31/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
+144            android:exported="true" />
+144-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/prasham/.gradle/caches/8.13/transforms/b341181be2f3e9ea3ea25906c0686d31/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
+145        <activity
+145-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/prasham/.gradle/caches/8.13/transforms/924e6cdc8e72f97ae27f97de140b6a5a/transformed/jetified-ui-tooling-release/AndroidManifest.xml:23:9-25:39
+146            android:name="androidx.compose.ui.tooling.PreviewActivity"
+146-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/prasham/.gradle/caches/8.13/transforms/924e6cdc8e72f97ae27f97de140b6a5a/transformed/jetified-ui-tooling-release/AndroidManifest.xml:24:13-71
+147            android:exported="true" />
+147-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/prasham/.gradle/caches/8.13/transforms/924e6cdc8e72f97ae27f97de140b6a5a/transformed/jetified-ui-tooling-release/AndroidManifest.xml:25:13-36
+148
+149        <service
+149-->[androidx.room:room-runtime:2.6.0] /Users/prasham/.gradle/caches/8.13/transforms/849f863c1e66ada1ee54e259ba16c480/transformed/room-runtime-2.6.0/AndroidManifest.xml:24:9-28:63
+150            android:name="androidx.room.MultiInstanceInvalidationService"
+150-->[androidx.room:room-runtime:2.6.0] /Users/prasham/.gradle/caches/8.13/transforms/849f863c1e66ada1ee54e259ba16c480/transformed/room-runtime-2.6.0/AndroidManifest.xml:25:13-74
+151            android:directBootAware="true"
+151-->[androidx.room:room-runtime:2.6.0] /Users/prasham/.gradle/caches/8.13/transforms/849f863c1e66ada1ee54e259ba16c480/transformed/room-runtime-2.6.0/AndroidManifest.xml:26:13-43
+152            android:exported="false" />
+152-->[androidx.room:room-runtime:2.6.0] /Users/prasham/.gradle/caches/8.13/transforms/849f863c1e66ada1ee54e259ba16c480/transformed/room-runtime-2.6.0/AndroidManifest.xml:27:13-37
+153
+154        <receiver
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+155            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+156            android:directBootAware="false"
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+157            android:enabled="true"
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+158            android:exported="true"
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+159            android:permission="android.permission.DUMP" >
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+160            <intent-filter>
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+161                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+162            </intent-filter>
+163            <intent-filter>
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+164                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+165            </intent-filter>
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+167                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+168            </intent-filter>
+169            <intent-filter>
+169-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+170                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+170-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+170-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prasham/.gradle/caches/8.13/transforms/ff6524a3fe39fd36dd19be5bd3e52e96/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+171            </intent-filter>
+172        </receiver>
+173    </application>
+174
+175</manifest>
