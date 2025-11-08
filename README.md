@@ -22,13 +22,6 @@ A comprehensive cybersecurity tool featuring:
 -  **Export Formats**: PCAP (Wireshark-compatible), JSON metadata, Evidence bundles
 -  **Legal Compliance**: Consent dialog, audit logging, auto-cleanup
 
-#### Desktop Web App
--  **Import & Visualize**: Drag-and-drop evidence bundle import
--  **Dashboard Analytics**: Interactive charts (Recharts), protocol breakdown
--  **Timeline Replay**: Playback captured sessions with temporal visualization
--  **Rule Builder**: Create & manage custom detection rules
--  **Cross-Platform**: Works on Mac, Windows, Linux
-
 ###  Bonus Features
 -  **One-Tap Security Filters**: Pre-configured filters for common threat patterns
 -  **Live Rule Builder**: Custom detection rules with real-time triggers
@@ -57,26 +50,6 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 ./gradlew assembleRelease
 # APK: app/build/outputs/apk/release/app-release.apk
 # AAB: app/build/outputs/bundle/release/app-release.aab
-```
-
-### Desktop Web App
-
-#### Prerequisites
-- Node.js 18+ 
-- npm 9+
-
-#### Development
-```bash
-cd desktop-web
-npm install
-npm run dev
-# Open http://localhost:3000
-```
-
-#### Production Build
-```bash
-npm run build
-# Static files in dist/
 ```
 
 ---
@@ -128,18 +101,6 @@ mobile-packet-hunter/
 | Charts | Vico Compose |
 | Security | Android Keystore (AES-GCM) |
 
-### Desktop Web
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 18 + TypeScript |
-| Build Tool | Vite 5 |
-| Styling | Tailwind CSS 3 |
-| Charts | Recharts 2 |
-| Maps | Leaflet + React-Leaflet |
-| State | Zustand |
-| Icons | Lucide React |
-| Routing | React Router 6 |
-
 ---
 
 ##  Usage Guide
@@ -167,33 +128,6 @@ mobile-packet-hunter/
    - Navigate to Export screen
    - Choose PCAP, JSON, or Evidence Bundle
    - Share with desktop app
-
-### Desktop App Workflow
-
-1. **Import Data**
-   - Navigate to Import page
-   - Drag & drop .zip evidence bundle or .json file
-   - Data loads automatically
-
-2. **Analyze Dashboard**
-   - View protocol distribution pie chart
-   - Check top talkers list
-   - Review recent packets table
-
-3. **Explore Map View**
-   - See remote hosts plotted geographically
-   - Click markers for packet/byte counts
-   - Filter by country/region
-
-4. **Replay Session**
-   - Use playback controls (play/pause/scrub)
-   - Watch packet rate changes over time
-   - Analyze timeline buckets
-
-5. **Manage Rules**
-   - Create custom detection rules
-   - Enable/disable individual rules
-   - Export rule sets
 
 ---
 
@@ -259,11 +193,6 @@ This tool is intended for:
 - **Battery**: <2% per hour (background capture)
 - **Packet Rate**: Up to 5,000 packets/sec
 
-### Desktop App
-- **Bundle Size**: ~1.2MB (gzipped)
-- **Load Time**: <2s for 100K packets
-- **Browser Support**: Chrome/Firefox/Safari/Edge (last 2 versions)
-
 ---
 
 ##  Troubleshooting
@@ -278,14 +207,6 @@ This tool is intended for:
 
 **Issue**: App crashes on start
 - **Solution**: Check Android version (need 8.0+), clear app data
-
-### Desktop
-
-**Issue**: Import fails
-- **Solution**: Verify file is valid .zip or .json, check browser console
-
-**Issue**: Map not showing
-- **Solution**: Check internet connection (Leaflet requires tiles), enable location data in export
 
 ---
 
